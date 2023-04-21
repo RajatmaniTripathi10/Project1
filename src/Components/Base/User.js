@@ -2,10 +2,15 @@ import { Link } from "react-router-dom";
 import './User.css'
 
 const UserDetails=()=>{
-
+    const styles = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '10vh',
+      };
     return(
         <div className="form">
-            <label>Basic</label>
+            <h2 style={styles}> Basic</h2>
             <form className="form-body">
                 <div>
                     <label className="form__label">First Name</label>
@@ -23,9 +28,7 @@ const UserDetails=()=>{
                     <label  className="form__label">Email</label>
                     <input type="email" className="form_input"/>
                 </div>
-                <div>
-                    <Link to="/shipping"><button type="submit">Next</button></Link>
-                </div>
+                
             </form>
         </div>
 

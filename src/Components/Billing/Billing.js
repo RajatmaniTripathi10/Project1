@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom';
 import './Billing.css';
 
 const BillingAddress=()=>{
-
+    const styles = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '10vh',
+      };
     return(
         <div className="form">
-            <label>Billing Address</label>
+           <h2 style={styles}>Billing</h2>
             <form className="form-body">
                 <div>
                     <label className="form__label">Full Name</label>
@@ -32,11 +37,7 @@ const BillingAddress=()=>{
                     <label  className="form__label">Zip/PIN</label>
                     <input type="long" className="form_input"/>
                 </div>
-                <div>
-                    <Link to="/"><button type="submit">Next</button></Link>
-                    <Link to="/shipping"><button type="submit">Back</button></Link>
-                    
-                </div>
+                
             </form>
         </div>
     );
